@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Meditation Lite: The Productive Programmer</title>
+    <meta name="description" content="The blog for programmers who are excited about being productive and want to make the best use of their time">
+
+    <!-- improve view in mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+@-ms-viewport{
+    width: device-width;
+    initial-scale: 1;
+}
+    </style>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- styling reset -->
+    <style>
+* { margin: 0; padding: 0; font-family: monospace; font-size: 12px; }
+    </style>
+
+    <script src="TimelineMax.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="meditation_lite.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<style>
+#content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color : white;
+}
+#refresh {
+    display: none;
+}
+</style>
+
+</head>
+<body>
+
+    <div id=content></div>
+
+    <div id=refresh>
+        <center id=msg><a href=/004/meditation_lite.html>Refresh</a> this page for another session.</center>
+        <center id=go>Go to <a href=/meditation_lite.js.php>blog post</a>.</center>
+    </div>
+
+    <script>
+window.onload = function() {
+    var c = document.getElementById("content");
+    show_anim(pick_random_anim(), c, function() {
+        document.body.removeChild(c);
+        var r = document.getElementById("refresh");
+        r.style.display = "block";
+    });
+}
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87972254-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
