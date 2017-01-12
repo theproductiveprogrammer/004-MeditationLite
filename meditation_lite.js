@@ -264,7 +264,7 @@
  * guides you through a quick
  * _*Meditation Lite*_ session.
  *
- * There is also a separate page
+ * This is a separate page
  * you can bookmark and use
  * whenever you feel stressed
  * out during the day.  Before a
@@ -274,13 +274,7 @@
  */
 
 /**
- * ball-thumbnail.png [href=javascript:show();]
- */
-
-/**
- * If you like the visualization
- * and want to use it, you can
- * [href=/004/meditation_lite.html](bookmark this link).
+ * ball-thumbnail.png [href=/004/meditation_lite.html]
  */
 
 /**
